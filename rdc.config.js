@@ -11,7 +11,7 @@ module.exports = {
     },
   ],
   docker: {
-    tag: 'rdebase/rdc-vue-suite',
+    tag: 'rdebase/rdc-vue-suite:0.0.1-beta.0',
     ports: [
       '8080:8080',
     ],
