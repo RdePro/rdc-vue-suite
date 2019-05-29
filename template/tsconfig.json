@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./ts.out",
+    "types": [
+      "webpack-env",
+      "mocha",
+      "chai",
+      "node"
+    ],
+    "typeRoots": [
+      "./src/typings",
+      "../app/typings"
+    ],
+    "paths": {
+      "src/*": [ "./src/*" ],
+      "@/*": [ "../app/*" ],
+      "*": [ "node_modules/*" ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "../app/**/*.ts",
+    "../app/**/*.tsx",
+    "../app/**/*.vue",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    "_docs"
+  ]
+}
