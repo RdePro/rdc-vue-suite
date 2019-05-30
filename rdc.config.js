@@ -18,10 +18,7 @@ module.exports = {
   },
   lint: {
     files: [
-      '**/*.js',
-      '**/*.vue',
-      '**/*.ts',
-      '**/*.tsx',
+      'app/',
     ],
   },
 };

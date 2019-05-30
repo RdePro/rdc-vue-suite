@@ -21,13 +21,9 @@
     ],
     "typeRoots": [
       "./src/typings",
-      "../app/typings"
+      "../app/typings",
+      "../template/src/typings"
     ],
-    "paths": {
-      "src/*": [ "./src/*" ],
-      "@/*": [ "../app/*" ],
-      "*": [ "node_modules/*" ]
-    },
     "lib": [
       "esnext",
       "dom",
@@ -39,6 +35,9 @@
     "../app/**/*.ts",
     "../app/**/*.tsx",
     "../app/**/*.vue",
+    "../template/**/*.ts",
+    "../template/**/*.tsx",
+    "../template/**/*.vue",
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./src/**/*.vue"
