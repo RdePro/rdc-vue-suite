@@ -6,7 +6,7 @@
     "release": "npm run build && npm publish",
     "serve": "vue-cli-service serve ./src/dev.tsx",
     "build": "vue-cli-service build --target=lib ./src/index.ts",
-    "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts",
+    "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts,.tsx,.vue",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {

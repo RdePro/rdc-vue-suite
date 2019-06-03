@@ -17,6 +17,7 @@ module.exports = {
   ],
   rules: {
     'class-methods-use-this': 0,
+    'no-underscore-dangle': 0,
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': [
       'error',
