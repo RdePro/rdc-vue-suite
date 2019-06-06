@@ -175,23 +175,128 @@
     </div>
 
     <div id="rde-page">
-      <h3 class="rde-h3">文件映射</h3>
-<pre class="hljs"><code><span class="hljs-built_in">module</span>.exports = [
-  {
-    <span class="hljs-attr">from</span>: <span class="hljs-string">'app'</span>,
-    <span class="hljs-attr">to</span>: <span class="hljs-string">'src'</span>,
+      <div>
+  <h4 class="rde-h4">文件映射</h4>
+  <table class="rde-table">
+    <tr>
+      <th>FROM</th>
+      <th>TO</th>
+    </tr>
+    <tr>
+      <td>app</td>
+      <td>src</td>
+    </tr>
+  </table>
+
+  <div style="display: flex; flex-direction: row; margin-top: 20px;">
+    <div style="width: 50%;">
+      <h4 class="rde-h4">依赖包</h4>
+      <table class="rde-table">
+        <tr>
+          <th>NAME</th>
+          <th>VERSION</th>
+        </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/@types" style="color: #87B8E2" target="_blank">@types/qs</a></td>
+            <td>^6.5.2</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/@types" style="color: #87B8E2" target="_blank">@types/vue</a></td>
+            <td>^2.0.0</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/@vue" style="color: #87B8E2" target="_blank">@vue/babel-helper-vue-jsx-merge-props</a></td>
+            <td>^1.0.0-beta.3</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/@vue" style="color: #87B8E2" target="_blank">@vue/babel-preset-jsx</a></td>
+            <td>^1.0.0-beta.3</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/axios" style="color: #87B8E2" target="_blank">axios</a></td>
+            <td>^0.18.0</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/core-js" style="color: #87B8E2" target="_blank">core-js</a></td>
+            <td>^2.6.5</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/element-ui" style="color: #87B8E2" target="_blank">element-ui</a></td>
+            <td>2.7.2</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/moment" style="color: #87B8E2" target="_blank">moment</a></td>
+            <td>^2.24.0</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/qs" style="color: #87B8E2" target="_blank">qs</a></td>
+            <td>^6.7.0</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/vue" style="color: #87B8E2" target="_blank">vue</a></td>
+            <td>^2.6.6</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/vue-class-component" style="color: #87B8E2" target="_blank">vue-class-component</a></td>
+            <td>^6.0.0</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.npmjs.com/package/vue-property-decorator" style="color: #87B8E2" target="_blank">vue-property-decorator</a></td>
+            <td>^8.0.0</td>
+          </tr>
+      </table>
+    </div>
+    <div style="width: 50%; margin-left: 8px;">
+      <h4 class="rde-h4">LINT规则</h4>
+      <div>
+        <pre class="hljs"><code><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-attr">root</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">env</span>: {
+    <span class="hljs-attr">node</span>: <span class="hljs-literal">true</span>,
   },
-]
+  <span class="hljs-attr">settings</span>: {
+    <span class="hljs-string">'import/resolver'</span>: {
+      <span class="hljs-attr">node</span>: {
+        <span class="hljs-attr">extensions</span>: [<span class="hljs-string">'.js'</span>, <span class="hljs-string">'.jsx'</span>, <span class="hljs-string">'.ts'</span>, <span class="hljs-string">'.tsx'</span>, <span class="hljs-string">'.vue'</span>],
+      },
+    },
+  },
+  <span class="hljs-attr">extends</span>: [
+    <span class="hljs-string">'plugin:vue/essential'</span>,
+    <span class="hljs-string">'@vue/airbnb'</span>,
+    <span class="hljs-string">'@vue/typescript'</span>,
+  ],
+  <span class="hljs-attr">rules</span>: {
+    <span class="hljs-string">'class-methods-use-this'</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">'no-underscore-dangle'</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">'import/no-extraneous-dependencies'</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-string">'import/no-unresolved'</span>: [
+      <span class="hljs-string">'error'</span>,
+      {
+        <span class="hljs-attr">ignore</span>: [<span class="hljs-string">'@/'</span>],
+      },
+    ],
+    <span class="hljs-string">'import/extensions'</span>: [<span class="hljs-number">0</span>],
+  },
+  <span class="hljs-attr">parserOptions</span>: {
+    <span class="hljs-attr">parser</span>: <span class="hljs-string">'@typescript-eslint/parser'</span>,
+  },
+};
+
 </code></pre>
-<p class="rde-p">  本地的app目录，最终在运行时，会被映射到template的src下执行；</p>
+
+      </div>
+    </div>
+  </div>
+</div>
 
     </div>
   </div>
 
   <script>
     window.rdeConf = {
-      navs: [{"title":"文档","main":true},{"title":"FAQ","url":"/FAQ.html"}],
-      pages: [{"title":"关于","subTitle":"About","url":"/index.html","order":12},{"title":"工程结构","subTitle":"Structure","url":"/structure.html","order":11},{"title":"支持命令","subTitle":"Scripts","url":"/commands.html","order":10},{"title":"文件映射","subTitle":"Mappings","url":"/mappings.html","order":10},{"title":"样式开发","subTitle":"Style","url":"/style.html","order":9},{"title":"FAQ","subTitle":"","url":"/faq.html","order":0}],
+      navs: [{"title":"文档","main":true},{"title":"速查","url":"/cheatsheet.html"},{"title":"FAQ","url":"/FAQ.html"}],
+      pages: [{"title":"关于","subTitle":"About","url":"/index.html","order":12},{"title":"工程结构","subTitle":"Structure","url":"/structure.html","order":11},{"title":"支持命令","subTitle":"Scripts","url":"/commands.html","order":10},{"title":"样式开发","subTitle":"Style","url":"/style.html","order":9},{"title":"FAQ","subTitle":"","url":"/faq.html","order":0}],
     };
 
     new Vue({
