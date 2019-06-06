@@ -6,7 +6,7 @@
     "release": "npm run build && npm publish",
     "serve": "vue-cli-service serve ./src/dev.tsx",
     "build": "vue-cli-service build --target=lib ./src/index.ts",
-    "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts",
+    "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts,.tsx,.vue",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "@vue/babel-preset-jsx": "^1.0.0-beta.3",
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
-    "element-ui": "^2.7.2",
+    "element-ui": "2.7.2",
     "moment": "^2.24.0",
     "qs": "^6.7.0",
     "vue": "^2.6.6",
