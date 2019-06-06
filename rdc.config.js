@@ -2,7 +2,7 @@ module.exports = {
   framework: 'vue',
   docs: {
     title: 'VUE Suite',
-    url: 'https://rdepro.github.io/rdc-vue-starter/',
+    url: 'https://rdepro.github.io/rdc-vue-suite/',
   },
   render: {},
   mappings: [
