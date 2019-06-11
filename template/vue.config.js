@@ -1,6 +1,6 @@
 const path = require('path');
 
-const outputDir = path.resolve(__dirname, '../app/dist');
+const outputDir = path.resolve(__dirname, './dist');
 module.exports = {
   outputDir,
   runtimeCompiler: true,

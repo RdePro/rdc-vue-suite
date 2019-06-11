@@ -4,7 +4,12 @@ module.exports = {
     title: 'VUE Suite',
     url: 'https://rdepro.github.io/rdc-vue-suite/',
   },
-  render: {},
+  render: {
+    includes: ['.json'],
+    mock: {
+      lib: 'test',
+    },
+  },
   mappings: [
     {
       from: 'app',

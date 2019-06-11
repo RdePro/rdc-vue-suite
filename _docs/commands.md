@@ -18,6 +18,16 @@ order: 10
 
 &emsp;&emsp;lint并fix全工程
 
-> rde release
+> rde run release
 
 &emsp;&emsp;发包到npm，请在app下维护好name和version，以及对应发包需要配置的依赖
+
+发布操作步骤：
+
+* 在app目录下新建package.json，如果不存在该文件
+
+* 填写对应的name和version
+
+* 在rda.config.js中的render中，配置lib属性为包的libName， 会作为vue-cli-service --name={{lib}} 使用
+
+* rde run release, 因为发布的是网易源，需要输入对应的网易npm的账号验证

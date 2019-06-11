@@ -1,14 +1,19 @@
 {
-  "name": "rdc-suite-basic",
-  "version": "0.0.1-alpha.1",
+  "name": "@kaola-sc/rdc-vue-suite",
+  "version": "0.0.1-alpha.4",
   "scripts": {
     "prerelease": "npm login",
     "release": "npm run build && npm publish",
     "serve": "vue-cli-service serve ./src/dev.tsx",
-    "build": "vue-cli-service build --target=lib ./src/index.ts",
+    "build": "vue-cli-service build --target=lib --name={{lib}} ./src/index.ts",
+    "postbuild": "cp -R ./dist ../app/dist",
     "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts,.tsx,.vue",
     "test:unit": "vue-cli-service test:unit"
   },
+  "main": "./dist/{{lib}}.umd.min.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@types/qs": "^6.5.2",
     "@types/vue": "^2.0.0",
