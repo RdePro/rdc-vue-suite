@@ -192,9 +192,24 @@
 </blockquote>
 <p class="rde-p">  lint并fix全工程</p>
 <blockquote>
-<p class="rde-p">rde release</p>
+<p class="rde-p">rde run release</p>
 </blockquote>
 <p class="rde-p">  发包到npm，请在app下维护好name和version，以及对应发包需要配置的依赖</p>
+<p class="rde-p">发布操作步骤：</p>
+<ul>
+<li>
+<p class="rde-p">在app目录下新建package.json，如果不存在该文件</p>
+</li>
+<li>
+<p class="rde-p">填写对应的name和version</p>
+</li>
+<li>
+<p class="rde-p">在rda.config.js中的render中，配置lib属性为包的libName， 会作为vue-cli-service --name={{lib}} 使用</p>
+</li>
+<li>
+<p class="rde-p">rde run release, 因为发布的是网易源，需要输入对应的网易npm的账号验证</p>
+</li>
+</ul>
 
     </div>
   </div>
