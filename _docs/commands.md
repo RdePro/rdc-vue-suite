@@ -30,4 +30,6 @@ order: 10
 
 * 在rda.config.js中的render中，配置lib属性为包的libName， 会作为vue-cli-service --name={{lib}} 使用
 
-* rde run release, 因为发布的是网易源，需要输入对应的网易npm的账号验证
+* rde run release, 因为默认发布的是网易源，需要输入对应的网易npm的账号验证
+
+* 如果没有网易源发布权限，可以在app目录下新增.npmrc更换registry，这个文件会覆盖默认的.npmrc
