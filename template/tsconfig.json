@@ -4,6 +4,8 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "declaration": true,
+    "declarationDir": "../app/types",
     "noImplicitAny": false,
     "importHelpers": true,
     "moduleResolution": "node",
