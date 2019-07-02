@@ -5,7 +5,8 @@
     "prerelease": "npm login",
     "release": "npm run build && npm publish",
     "serve": "vue-cli-service serve ./src/dev.tsx",
-    "build": "tsc -p ../template/tsconfig.json && vue-cli-service build --target=lib --name={{lib}} ./src/index.ts",
+    "prebuild": "tsc -p ../template/tsconfig.json && cp -R ../app/types ./types",
+    "build": "vue-cli-service build --target=lib --name={{lib}} ./src/index.ts",
     "postbuild": "cp -R ./dist ../app/dist",
     "lint": "tsc && eslint -c .eslintrc.js --fix --ext .ts,.tsx,.vue",
     "test:unit": "vue-cli-service test:unit"
