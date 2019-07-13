@@ -16,14 +16,8 @@
     "dist"
   ],
   "dependencies": {
-    "@types/qs": "^6.5.2",
-    "@types/vue": "^2.0.0",
-    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0-beta.3",
-    "@vue/babel-preset-jsx": "^1.0.0-beta.3",
-    "axios": "^0.18.0",
     "core-js": "^2.6.5",
     "element-ui": "^2.10.1",
-    "moment": "^2.24.0",
     "qs": "^6.7.0",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
@@ -32,6 +26,11 @@
   "devDependencies": {
     "@types/chai": "^4.1.0",
     "@types/mocha": "^5.2.4",
+    "@types/qs": "^6.5.2",
+    "@types/vue": "^2.0.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0-beta.3",
+    "@vue/babel-preset-jsx": "^1.0.0-beta.3",
+    "axios": "^0.18.0",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.0",
