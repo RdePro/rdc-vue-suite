@@ -25,6 +25,7 @@ module.exports = {
         ignore: ['@/'],
       },
     ],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
     'import/extensions': [0],
   },
   parserOptions: {
